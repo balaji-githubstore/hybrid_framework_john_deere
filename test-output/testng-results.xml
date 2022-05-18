@@ -2,20 +2,20 @@
 <testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-18T12:25:00 IST" name="Default suite" finished-at="2022-05-18T12:25:50 IST" duration-ms="49801">
+  <suite started-at="2022-05-18T15:12:07 IST" name="Default suite" finished-at="2022-05-18T15:13:24 IST" duration-ms="76784">
     <groups>
     </groups>
-    <test started-at="2022-05-18T12:25:00 IST" name="Default test" finished-at="2022-05-18T12:25:50 IST" duration-ms="49801">
+    <test started-at="2022-05-18T15:12:07 IST" name="Default test" finished-at="2022-05-18T15:13:24 IST" duration-ms="76784">
       <class name="com.johndeere.test.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.johndeere.test.LoginTest@2c1b194a]" started-at="2022-05-18T12:25:15 IST" name="setup" finished-at="2022-05-18T12:25:24 IST" duration-ms="8397" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.johndeere.test.LoginTest@51e69659]" started-at="2022-05-18T15:12:16 IST" name="setup" finished-at="2022-05-18T15:12:26 IST" duration-ms="10257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="invalidCredentialTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.johndeere.test.LoginTest@2c1b194a]" started-at="2022-05-18T12:25:24 IST" name="invalidCredentialTest" data-provider="invalidCredentialData" finished-at="2022-05-18T12:25:35 IST" duration-ms="11485" status="PASS">
+        <test-method signature="validCredentialTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.johndeere.test.LoginTest@51e69659]" started-at="2022-05-18T15:12:26 IST" name="validCredentialTest" data-provider="validCredentialData" finished-at="2022-05-18T15:12:45 IST" duration-ms="18438" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[john]]>
+                <![CDATA[admin]]>
               </value>
             </param>
             <param index="1">
@@ -30,26 +30,26 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[Invalid username or password]]>
+                <![CDATA[OpenEMR]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidCredentialTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.johndeere.test.LoginTest@2c1b194a]" started-at="2022-05-18T12:25:35 IST" name="teardown" finished-at="2022-05-18T12:25:36 IST" duration-ms="480" status="PASS">
+        </test-method> <!-- validCredentialTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.johndeere.test.LoginTest@51e69659]" started-at="2022-05-18T15:12:45 IST" name="teardown" finished-at="2022-05-18T15:12:45 IST" duration-ms="319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.johndeere.test.LoginTest@2c1b194a]" started-at="2022-05-18T12:25:36 IST" name="setup" finished-at="2022-05-18T12:25:42 IST" duration-ms="6094" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.johndeere.test.LoginTest@51e69659]" started-at="2022-05-18T15:12:45 IST" name="setup" finished-at="2022-05-18T15:12:51 IST" duration-ms="6030" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="invalidCredentialTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.johndeere.test.LoginTest@2c1b194a]" started-at="2022-05-18T12:25:42 IST" name="invalidCredentialTest" data-provider="invalidCredentialData" finished-at="2022-05-18T12:25:49 IST" duration-ms="7195" status="PASS">
+        <test-method signature="validCredentialTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.johndeere.test.LoginTest@51e69659]" started-at="2022-05-18T15:12:51 IST" name="validCredentialTest" data-provider="validCredentialData" finished-at="2022-05-18T15:13:24 IST" duration-ms="32641" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[peter]]>
+                <![CDATA[accountant]]>
               </value>
             </param>
             <param index="1">
@@ -59,19 +59,19 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Danish]]>
+                <![CDATA[Dutch]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Invalid username or password]]>
+                <![CDATA[OpenEMR]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidCredentialTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.johndeere.test.LoginTest@2c1b194a]" started-at="2022-05-18T12:25:49 IST" name="teardown" finished-at="2022-05-18T12:25:50 IST" duration-ms="471" status="PASS">
+        </test-method> <!-- validCredentialTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.johndeere.test.LoginTest@51e69659]" started-at="2022-05-18T15:13:24 IST" name="teardown" finished-at="2022-05-18T15:13:24 IST" duration-ms="448" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
