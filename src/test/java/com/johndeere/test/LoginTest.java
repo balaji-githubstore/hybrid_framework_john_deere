@@ -7,19 +7,24 @@ import org.testng.annotations.Test;
 
 import com.johndeere.base.WebDriverWrapper;
 public class LoginTest extends WebDriverWrapper {
+	
+	//create dataprovider 
+//	admin, pass, English (Indian), OpenEMR
+//	physician, physician, English (Indian), OpenEMR
+//	accountant, accountant, English (Indian), OpenEMR
 
 	@Test
-	public void validCredentialTest() {
+	public void validCredentialTest(String username,String password,String language,String expectedTitle) {
 
-		driver.findElement(By.id("authUser")).sendKeys("admin");
-		driver.findElement(By.id("clearPass")).sendKeys("pass");
+		driver.findElement(By.id("authUser")).sendKeys(username);
+		driver.findElement(By.id("clearPass")).sendKeys(password);
 		Select selectLan = new Select(driver.findElement(By.xpath("//select[@name='languageChoice']")));
-		selectLan.selectByVisibleText("English (Indian)");
+		selectLan.selectByVisibleText(language);
 		driver.findElement(By.cssSelector("#login-button")).click();
 
 		// wait until navigate to openemr dashboard
 		String actualTitle = driver.getTitle();
-		Assert.assertEquals(actualTitle, "OpenEMR");
+		Assert.assertEquals(actualTitle, expectedTitle);
 	}
 
 	@Test
