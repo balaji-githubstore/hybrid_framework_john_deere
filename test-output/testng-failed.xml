@@ -6,6 +6,9 @@
       <class name="com.johndeere.test.LoginTest">
         <methods>
           <include name="invalidCredentialTest"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="validCredentialTest"/>
         </methods>
       </class> <!-- com.johndeere.test.LoginTest -->
     </classes>
