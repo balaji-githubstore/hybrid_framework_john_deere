@@ -1,67 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-18T16:26:25 IST" name="Default suite" finished-at="2022-05-18T16:27:39 IST" duration-ms="74085">
+  <suite started-at="2022-05-18T17:14:28 IST" name="OpenEMR Suite" finished-at="2022-05-18T17:14:39 IST" duration-ms="10734">
     <groups>
     </groups>
-    <test started-at="2022-05-18T16:26:25 IST" name="Default test" finished-at="2022-05-18T16:27:39 IST" duration-ms="74085">
-      <class name="com.johndeere.test.PatientTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.johndeere.test.PatientTest@659499f1]" started-at="2022-05-18T16:26:54 IST" name="setup" finished-at="2022-05-18T16:27:04 IST" duration-ms="10595" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="addPaitentTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.johndeere.test.PatientTest@659499f1]" started-at="2022-05-18T16:27:04 IST" name="addPaitentTest" data-provider="commonDataProvider" finished-at="2022-05-18T16:27:31 IST" duration-ms="26566" status="PASS">
+    <test started-at="2022-05-18T17:14:28 IST" name="Login UI Test - Chrome" finished-at="2022-05-18T17:14:38 IST" duration-ms="9436">
+      <class name="com.johndeere.test.LoginUserInterfaceTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.johndeere.test.LoginUserInterfaceTest@53fe15ff]" started-at="2022-05-18T17:14:28 IST" name="setup" finished-at="2022-05-18T17:14:37 IST" duration-ms="8697" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pass]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[English (Indian)]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Wick]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[2022-05-18]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Male]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Medical Record Dashboard - john wick]]>
+                <![CDATA[ch]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addPaitentTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.johndeere.test.PatientTest@659499f1]" started-at="2022-05-18T16:27:31 IST" name="teardown" finished-at="2022-05-18T16:27:39 IST" duration-ms="8481" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="validateTitleTest()[pri:0, instance:com.johndeere.test.LoginUserInterfaceTest@53fe15ff]" started-at="2022-05-18T17:14:37 IST" name="validateTitleTest" finished-at="2022-05-18T17:14:37 IST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitleTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.johndeere.test.LoginUserInterfaceTest@53fe15ff]" started-at="2022-05-18T17:14:37 IST" name="teardown" finished-at="2022-05-18T17:14:38 IST" duration-ms="662" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.johndeere.test.PatientTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.johndeere.test.LoginUserInterfaceTest -->
+    </test> <!-- Login UI Test - Chrome -->
+    <test started-at="2022-05-18T17:14:28 IST" name="Login UI Test - Edge" finished-at="2022-05-18T17:14:39 IST" duration-ms="10734">
+      <class name="com.johndeere.test.LoginUserInterfaceTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.johndeere.test.LoginUserInterfaceTest@27462a88]" started-at="2022-05-18T17:14:28 IST" name="setup" finished-at="2022-05-18T17:14:38 IST" duration-ms="10238" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validateTitleTest()[pri:0, instance:com.johndeere.test.LoginUserInterfaceTest@27462a88]" started-at="2022-05-18T17:14:38 IST" name="validateTitleTest" finished-at="2022-05-18T17:14:38 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitleTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.johndeere.test.LoginUserInterfaceTest@27462a88]" started-at="2022-05-18T17:14:38 IST" name="teardown" finished-at="2022-05-18T17:14:39 IST" duration-ms="439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.johndeere.test.LoginUserInterfaceTest -->
+    </test> <!-- Login UI Test - Edge -->
+  </suite> <!-- OpenEMR Suite -->
 </testng-results>
