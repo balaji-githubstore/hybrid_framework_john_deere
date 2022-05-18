@@ -26,16 +26,35 @@ public class LoginTest {
 		
 		driver.findElement(By.id("authUser")).sendKeys("admin");
 		driver.findElement(By.id("clearPass")).sendKeys("pass");
-		
 		Select selectLan=new Select(driver.findElement(By.xpath("//select[@name='languageChoice']")));
-		selectLan.selectByVisibleText("English (Indian)");
-		
+		selectLan.selectByVisibleText("English (Indian)");	
 		driver.findElement(By.cssSelector("#login-button")).click();
 		
 		//wait until navigate to openemr dashboard
-		
 		String actualTitle=driver.getTitle();
 		Assert.assertEquals(actualTitle, "OpenEMR");
+	}
+	
+	@Test
+	public void invalidCredentialTest()
+	{
+		WebDriverManager.chromedriver().setup();
+		
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		
+		driver.get("http://demo.openemr.io/b/openemr");
+		
+		driver.findElement(By.id("authUser")).sendKeys("admin123");
+		driver.findElement(By.id("clearPass")).sendKeys("pass");
+		Select selectLan=new Select(driver.findElement(By.xpath("//select[@name='languageChoice']")));
+		selectLan.selectByVisibleText("English (Indian)");	
+		driver.findElement(By.cssSelector("#login-button")).click();
+		
+		String actualError= driver.findElement(By.xpath("//*[contains(text(),'Invalid')]")).getText();
+		
+		Assert.assertEquals(actualError, "Invalid username or password");
 	}
 }
 

@@ -5,7 +5,7 @@
     <classes>
       <class name="com.johndeere.test.LoginTest">
         <methods>
-          <include name="validCredentialTest"/>
+          <include name="invalidCredentialTest"/>
         </methods>
       </class> <!-- com.johndeere.test.LoginTest -->
     </classes>
