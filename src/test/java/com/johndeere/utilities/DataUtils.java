@@ -1,23 +1,15 @@
 package com.johndeere.utilities;
 
+import java.io.IOException;
+
 import org.testng.annotations.DataProvider;
 
 public class DataUtils {
 	
 	@DataProvider
-	public Object[][] invalidCredentialData()
+	public Object[][] invalidCredentialData() throws IOException
 	{
-		Object[][] main=new Object[2][4];
-		main[0][0] = "john";
-		main[0][1] = "pass";
-		main[0][2] = "English (Indian)";
-		main[0][3] = "Invalid username or password";
-
-		main[1][0] = "peter";
-		main[1][1] = "accountant";
-		main[1][2] = "Danish";
-		main[1][3] = "Invalid username or password";
-		
+		Object[][] main=ExcelUtils.getSheetIntoTwoDimArray("test_data/open_emr_test_data.xlsx", "invalidCredentialTest");
 		return main;
 	}
 
