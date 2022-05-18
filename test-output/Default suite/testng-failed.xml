@@ -5,10 +5,9 @@
     <classes>
       <class name="com.johndeere.test.LoginTest">
         <methods>
-          <include name="invalidCredentialTest"/>
-          <include name="setup"/>
           <include name="teardown"/>
-          <include name="validCredentialTest"/>
+          <include name="setup"/>
+          <include name="validCredentialTest" invocation-numbers="2"/>
         </methods>
       </class> <!-- com.johndeere.test.LoginTest -->
     </classes>
