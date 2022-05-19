@@ -5,7 +5,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-public class Demo1 {
+public class Demo1ExtentReport {
 
 	public static void main(String[] args) {
 		
