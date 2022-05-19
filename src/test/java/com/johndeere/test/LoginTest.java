@@ -15,15 +15,15 @@ import com.johndeere.utilities.DataUtils;
 
 public class LoginTest extends WebDriverWrapper {
 	
-	@Test(dataProviderClass = DataUtils.class,dataProvider = "commonDataProvider")
+	@Test(dataProviderClass = DataUtils.class,dataProvider = "commonDataProvider",groups = {"login","high"})
 	public void validCredentialTest(String username, String password, String language, String expectedTitle) {
 
 		
 		driver.findElement(By.id("authUser")).sendKeys(username);
-		test.log(Status.INFO, "Entered Username:"+username);
+		test.log(Status.INFO, "Entered Username :"+username);
 		
 		driver.findElement(By.id("clearPass")).sendKeys(password);
-		test.log(Status.INFO, "Entered Password:"+password);
+		test.log(Status.INFO, "Entered Password :"+password);
 		
 		Select selectLan = new Select(driver.findElement(By.xpath("//select[@name='languageChoice']")));
 		selectLan.selectByVisibleText(language);
@@ -43,7 +43,7 @@ public class LoginTest extends WebDriverWrapper {
 		Assert.assertEquals(actualTitle, expectedTitle);
 	}
 
-	@Test(dataProviderClass = DataUtils.class,dataProvider = "commonDataProvider")
+	@Test(dataProviderClass = DataUtils.class,dataProvider = "commonDataProvider",groups = {"login","low"})
 	public void invalidCredentialTest(String username, String password, String language, String expectedError) {
 		driver.findElement(By.id("authUser")).sendKeys(username);
 		driver.findElement(By.id("clearPass")).sendKeys(password);

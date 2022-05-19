@@ -33,7 +33,7 @@ public class WebDriverWrapper {
 	private static ExtentReports extent;
 	protected static ExtentTest test;
 	
-	@BeforeSuite
+	@BeforeSuite(alwaysRun = true)
 	public void init()
 	{
 		extent = new ExtentReports();
@@ -41,13 +41,13 @@ public class WebDriverWrapper {
 		extent.attachReporter(spark); 
 	}
 
-	@AfterSuite
+	@AfterSuite(alwaysRun = true)
 	public void end()
 	{
 		extent.flush();
 	}
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	@Parameters({ "browser" })
 	public void setup(@Optional("ch") String browserName,Method method) {
 		
@@ -69,7 +69,7 @@ public class WebDriverWrapper {
 		driver.get("http://demo.openemr.io/b/openemr");
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void teardown(ITestResult result) {
 
 		if (result.getStatus() == ITestResult.FAILURE) {

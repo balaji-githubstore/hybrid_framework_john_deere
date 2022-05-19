@@ -15,7 +15,7 @@ import com.johndeere.utilities.DataUtils;
 
 public class PatientTest extends WebDriverWrapper{
 	
-	@Test(dataProviderClass = DataUtils.class,dataProvider = "commonDataProvider")
+	@Test(dataProviderClass = DataUtils.class,dataProvider = "commonDataProvider",groups = {"patient","high"})
 	public void addPaitentTest(String username,String password,String language,String firstname,String lastname,String dob,String gender,String expectedAlert,String expectedPatient)
 	{
 		driver.findElement(By.id("authUser")).sendKeys(username);
