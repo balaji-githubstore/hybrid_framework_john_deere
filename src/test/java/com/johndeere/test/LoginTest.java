@@ -1,7 +1,11 @@
 package com.johndeere.test;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -20,6 +24,9 @@ public class LoginTest extends WebDriverWrapper {
 		driver.findElement(By.cssSelector("#login-button")).click();
 
 		// wait until navigate to openemr dashboard
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(50));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[text()='Patient']")));
+				
 		String actualTitle = driver.getTitle();
 		Assert.assertEquals(actualTitle, expectedTitle);
 	}
