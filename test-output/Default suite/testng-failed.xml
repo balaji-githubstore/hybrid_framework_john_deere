@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.johndeere.test.LoginTest">
+      <class name="com.johndeere.test.LoginUserInterfaceTest">
         <methods>
+          <include name="validateTitleTest"/>
           <include name="teardown"/>
+          <include name="end"/>
           <include name="setup"/>
-          <include name="validCredentialTest"/>
+          <include name="init"/>
         </methods>
-      </class> <!-- com.johndeere.test.LoginTest -->
+      </class> <!-- com.johndeere.test.LoginUserInterfaceTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
