@@ -7,13 +7,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class DashboardPage {
+import com.johndeere.base.WebDriverKeywords;
+
+public class DashboardPage extends WebDriverKeywords {
 	private By patientLocator = By.xpath("//div[text()='Patient']");
 	private By newSearchLocator = By.xpath("//div[text()='New/Search']");
 
 	private WebDriver driver;
 
 	public DashboardPage(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 	}
 
@@ -27,11 +30,11 @@ public class DashboardPage {
 	}
 
 	public void clickOnPatient() {
-		driver.findElement(patientLocator).click();
+		clickUsingLocator(patientLocator);
 	}
 
 	public void clickOnNewSearch() {
-		driver.findElement(newSearchLocator).click();
+		clickUsingLocator(newSearchLocator);
 	}
 
 }

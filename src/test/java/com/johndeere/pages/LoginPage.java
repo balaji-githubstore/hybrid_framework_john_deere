@@ -4,7 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class LoginPage {
+import com.johndeere.base.WebDriverKeywords;
+
+public class LoginPage extends WebDriverKeywords {
 	private By usernameLocator = By.id("authUser");
 	private By passwordLocator = By.id("clearPass");
 	private By languageLocator = By.xpath("//select[@name='languageChoice']");
@@ -15,15 +17,16 @@ public class LoginPage {
 	private WebDriver driver;
 
 	public LoginPage(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 	}
 
 	public void enterUsername(String username) {
-		driver.findElement(usernameLocator).sendKeys(username);
+		enterUsingLocator(usernameLocator, username);
 	}
 
 	public void enterPassword(String password) {
-		driver.findElement(passwordLocator).sendKeys(password);
+		enterUsingLocator(passwordLocator, password);
 	}
 
 	public void selectLanguageByText(String language) {
@@ -32,7 +35,7 @@ public class LoginPage {
 	}
 
 	public void clickOnLogin() {
-		driver.findElement(loginLocator).click();
+		clickUsingLocator(loginLocator);
 	}
 
 	public String getInvalidErrorMessage() {
@@ -40,7 +43,7 @@ public class LoginPage {
 	}
 
 	public void clickOnAckLicCert() {
-		driver.findElement(ackLicCertLocator).click();
+		clickUsingLocator(ackLicCertLocator);
 	}
 
 }
