@@ -1,33 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Alert text: New Due Clinical Reminders
-
-Assessment: Tobacco
-
-(See the Clinical Reminders widget for more details)]]>
-    </line>
-    <line>
-      <![CDATA[Added Patient Name: Medical Record Dashboard - John1 Wick]]>
-    </line>
   </reporter-output>
-  <suite started-at="2022-05-20T11:34:44 IST" name="Default suite" finished-at="2022-05-20T11:35:52 IST" duration-ms="68287">
+  <suite started-at="2022-05-20T12:02:51 IST" name="Default suite" finished-at="2022-05-20T12:05:29 IST" duration-ms="157503">
     <groups>
       <group name="high">
-        <method signature="PatientTest.addPaitentTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.johndeere.test.PatientTest@6221a451]" name="addPaitentTest" class="com.johndeere.test.PatientTest"/>
+        <method signature="LoginTest.validCredentialTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.johndeere.test.LoginTest@18df8434]" name="validCredentialTest" class="com.johndeere.test.LoginTest"/>
       </group> <!-- high -->
-      <group name="patient">
-        <method signature="PatientTest.addPaitentTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.johndeere.test.PatientTest@6221a451]" name="addPaitentTest" class="com.johndeere.test.PatientTest"/>
-      </group> <!-- patient -->
+      <group name="login">
+        <method signature="LoginTest.validCredentialTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.johndeere.test.LoginTest@18df8434]" name="validCredentialTest" class="com.johndeere.test.LoginTest"/>
+      </group> <!-- login -->
     </groups>
-    <test started-at="2022-05-20T11:34:44 IST" name="Default test" finished-at="2022-05-20T11:35:52 IST" duration-ms="68287">
-      <class name="com.johndeere.test.PatientTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:com.johndeere.test.PatientTest@6221a451]" started-at="2022-05-20T11:34:43 IST" name="init" finished-at="2022-05-20T11:34:44 IST" duration-ms="517" status="PASS">
+    <test started-at="2022-05-20T12:02:51 IST" name="Default test" finished-at="2022-05-20T12:05:29 IST" duration-ms="157503">
+      <class name="com.johndeere.test.LoginTest">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.johndeere.test.LoginTest@18df8434]" started-at="2022-05-20T12:02:46 IST" name="init" finished-at="2022-05-20T12:02:51 IST" duration-ms="5072" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.johndeere.test.PatientTest@6221a451]" started-at="2022-05-20T11:34:45 IST" name="setup" finished-at="2022-05-20T11:35:09 IST" duration-ms="24313" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.johndeere.test.LoginTest@18df8434]" started-at="2022-05-20T12:03:02 IST" name="setup" finished-at="2022-05-20T12:03:24 IST" duration-ms="22281" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -36,14 +26,14 @@ Assessment: Tobacco
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.johndeere.test.PatientTest.addPaitentTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+                <![CDATA[public void com.johndeere.test.LoginTest.validCredentialTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addPaitentTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.johndeere.test.PatientTest@6221a451]" started-at="2022-05-20T11:35:09 IST" name="addPaitentTest" data-provider="commonDataProvider" finished-at="2022-05-20T11:35:52 IST" duration-ms="42592" status="PASS">
+        <test-method signature="validCredentialTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.johndeere.test.LoginTest@18df8434]" started-at="2022-05-20T12:03:24 IST" name="validCredentialTest" data-provider="commonDataProvider" finished-at="2022-05-20T12:05:25 IST" duration-ms="121000" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,68 +52,29 @@ Assessment: Tobacco
             </param>
             <param index="3">
               <value>
-                <![CDATA[John1]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Wick]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[2022-05-22]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Male]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Tob]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[Medical Record Dashboard - John1 Wick]]>
+                <![CDATA[OpenEMR]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Alert text: New Due Clinical Reminders
-
-Assessment: Tobacco
-
-(See the Clinical Reminders widget for more details)]]>
-            </line>
-            <line>
-              <![CDATA[Added Patient Name: Medical Record Dashboard - John1 Wick]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- addPaitentTest -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.johndeere.test.PatientTest@6221a451]" started-at="2022-05-20T11:35:52 IST" name="teardown" finished-at="2022-05-20T11:35:52 IST" duration-ms="356" status="PASS">
+        </test-method> <!-- validCredentialTest -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.johndeere.test.LoginTest@18df8434]" started-at="2022-05-20T12:05:25 IST" name="teardown" finished-at="2022-05-20T12:05:29 IST" duration-ms="3498" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addPaitentTest status=SUCCESS method=PatientTest.addPaitentTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.johndeere.test.PatientTest@6221a451] output=Alert text: New Due Clinical Reminders
-
-Assessment: Tobacco
-
-(See the Clinical Reminders widget for more details)]]]>
+                <![CDATA[[TestResult name=validCredentialTest status=SUCCESS method=LoginTest.validCredentialTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.johndeere.test.LoginTest@18df8434] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="end()[pri:0, instance:com.johndeere.test.PatientTest@6221a451]" started-at="2022-05-20T11:35:52 IST" name="end" finished-at="2022-05-20T11:35:53 IST" duration-ms="546" status="PASS">
+        <test-method is-config="true" signature="end()[pri:0, instance:com.johndeere.test.LoginTest@18df8434]" started-at="2022-05-20T12:05:29 IST" name="end" finished-at="2022-05-20T12:05:33 IST" duration-ms="4243" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-      </class> <!-- com.johndeere.test.PatientTest -->
+      </class> <!-- com.johndeere.test.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

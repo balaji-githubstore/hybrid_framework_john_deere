@@ -39,7 +39,7 @@ public class LoginPage extends WebDriverKeywords {
 	}
 
 	public String getInvalidErrorMessage() {
-		return driver.findElement(errorLocator).getText();
+		return getTextUsingLocator(errorLocator);
 	}
 
 	public void clickOnAckLicCert() {

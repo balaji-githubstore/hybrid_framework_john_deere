@@ -19,4 +19,8 @@ public class WebDriverKeywords {
 	{
 		driver.findElement(locator).sendKeys(text);
 	}
+	
+	public String getTextUsingLocator(By locator) {
+		return driver.findElement(locator).getText();
+	}
 }
