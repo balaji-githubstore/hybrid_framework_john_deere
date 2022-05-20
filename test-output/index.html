@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Balaji\AppData\Local\Temp\testng-eclipse-1019698785\testng-customsuite.xml</span>
+                    <span>C:\Users\Balaji\AppData\Local\Temp\testng-eclipse-574432552\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.johndeere.test.LoginTest" class="method navigator-link" hash-for-method="validCredentialTest(admin, pass, English (Indian), OpenEMR)">validCredentialTest(admin, pass, English (Indian), OpenEMR)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.johndeere.test.PatientTest" class="method navigator-link" hash-for-method="addPaitentTest(admin, pass, English (Indian), John1, Wick, 2022-05-22, Male, Tob, Medical Record Dashboard - John1 ...)">addPaitentTest(admin, pass, English (Indian), John1, Wick, 2022-05-22, Male, Tob, Medical Record Dashboard - John1 ...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,15 +122,15 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.johndeere.test.LoginTest</span>
+              <span class="class-name">com.johndeere.test.PatientTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validCredentialTest(admin, pass, English (Indian), OpenEMR)">
-                  </a> <!-- validCredentialTest(admin, pass, English (Indian), OpenEMR) -->
-                  <span class="method-name">validCredentialTest</span>
-                  <span class="parameters">(admin, pass, English (Indian), OpenEMR)</span>
+                  <a name="addPaitentTest(admin, pass, English (Indian), John1, Wick, 2022-05-22, Male, Tob, Medical Record Dashboard - John1 ...)">
+                  </a> <!-- addPaitentTest(admin, pass, English (Indian), John1, Wick, 2022-05-22, Male, Tob, Medical Record Dashboard - John1 ...) -->
+                  <span class="method-name">addPaitentTest</span>
+                  <span class="parameters">(admin, pass, English (Indian), John1, Wick, 2022-05-22, Male, Tob, Medical Record Dashboard - John1 Wick)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -138,7 +138,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Balaji\AppData\Local\Temp\testng-eclipse-1019698785\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Balaji\AppData\Local\Temp\testng-eclipse-574432552\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -147,11 +147,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.johndeere.test.LoginTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;validCredentialTest&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.johndeere.test.LoginTest --&gt;
+      &lt;class name=&quot;com.johndeere.test.PatientTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -179,15 +175,15 @@
               <span class="test-group-name">high</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">validCredentialTest</span>
+                <span class="method-in-group-name">addPaitentTest</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
             <div class="test-group">
-              <span class="test-group-name">login</span>
+              <span class="test-group-name">patient</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">validCredentialTest</span>
+                <span class="method-in-group-name">addPaitentTest</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -209,14 +205,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validCredentialTest')
-data.setCell(0, 2, 'com.johndeere.test.LoginTest')
-data.setCell(0, 3, 81190);
+data.setCell(0, 1, 'addPaitentTest')
+data.setCell(0, 2, 'com.johndeere.test.PatientTest')
+data.setCell(0, 3, 42592);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 42 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -227,20 +223,24 @@ return data;
             <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addPaitentTest(admin, pass, English (Indian), John1, Wick, 2022-05-22, Male, Tob, Medical Record Dashboard - John1 ...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Alert text: New Due Clinical Reminders
+
+Assessment: Tobacco
+
+(See the Clinical Reminders widget for more details)</span>
+                <span class="reporter-method-output">Added Patient Name: Medical Record Dashboard - John1 Wick</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.johndeere.test.LoginTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">invalidCredentialTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -249,26 +249,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.johndeere.test.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.johndeere.test.PatientTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">init</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
-                <span class="method-name">setup(ch, public void com.johndeere.test.LoginTest.validCredentialTest(java.lang.String,java.lang.String,j...)</span>
-                <span class="method-start">1825 ms</span>
+                <span class="method-name">setup(ch, public void com.johndeere.test.PatientTest.addPaitentTest(java.lang.String,java.lang.String,java...)</span>
+                <span class="method-start">1539 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validCredentialTest(admin, pass, English (Indian), OpenEMR)</span>
-                <span class="method-start">23911 ms</span>
+                <span class="method-name">addPaitentTest(admin, pass, English (Indian), John1, Wick, 2022-05-22, Male, Tob, Medical Record Dashboard - John1 ...)</span>
+                <span class="method-start">25853 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=validCredentialTest status=SUCCESS method=LoginTest.validCredentialTest(java.lang.S...)</span>
-                <span class="method-start">105113 ms</span>
+                <span class="method-name">teardown([TestResult name=addPaitentTest status=SUCCESS method=PatientTest.addPaitentTest(java.lang.String,ja...)</span>
+                <span class="method-start">68447 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">end</span>
-                <span class="method-start">106056 ms</span>
+                <span class="method-start">68822 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
