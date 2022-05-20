@@ -92,7 +92,8 @@ public class WebDriverWrapper {
 	}
 
 	@AfterMethod(alwaysRun = true)
-	public void teardown(ITestResult result) {
+	@Parameters({ "system" })
+	public void teardown(ITestResult result,@Optional("local") String system) {
 
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " FAILED ", ExtentColor.RED));
@@ -108,10 +109,14 @@ public class WebDriverWrapper {
 		String base64String = ts.getScreenshotAs(OutputType.BASE64);
 		test.addScreenCaptureFromBase64String(base64String, result.getName());
 		
-		//sauce lab result
-        String status = result.isSuccess() ? "passed" : "failed";
-        JavascriptExecutor js=(JavascriptExecutor) driver;
-        js.executeScript("sauce:job-result=" + status);
+		if(system.equalsIgnoreCase("cloud"))
+		{
+			//sauce lab result
+	        String status = result.isSuccess() ? "passed" : "failed";
+	        JavascriptExecutor js=(JavascriptExecutor) driver;
+	        js.executeScript("sauce:job-result=" + status);
+		}
+
         
 		driver.quit();
 	}
